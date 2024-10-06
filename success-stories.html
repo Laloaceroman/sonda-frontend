@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>SONDA</title>
+    <meta charset="UTF-8">
+    <link href="img/favicon.png" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="css/main.css?v=52026" rel="stylesheet" type="text/css">
+    <script src="js/main.js?v=52026" type="text/javascript"></script>
+    <!--script(src='https://f.vimeocdn.com/js/froogaloop2.min.js')-->
+    <script src="https://cdn.plyr.io/3.4.6/plyr.js"></script>
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+    <!-- Meta tags facebook-->
+    <meta property="og:title" content="#">
+    <meta property="og:description" content="#">
+    <meta property="og:image" content="#">
+    <!-- Meta tags twitter cards-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="#">
+    <meta name="twitter:description" content="#">
+    <meta name="twitter:image" content="#">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+    <!--[if lt IE 9]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+    
+    
+  </head>
+  <body>
+    <header>
+      <div class="header__primary">
+        <div class="header__wrap">
+          <div class="header__search">
+            <form action="search.html" method="get"><span class="fa fa-search"></span>
+              <input type="text" name="s" placeholder="Buscar producto">
+            </form>
+          </div>
+          <div class="header__inner">
+            <div class="header__logo header__logo--color"><a href="index.html"><img src="img/logo-sonda.svg"></a></div>
+            <div class="header__logo header__logo--white"><a href="index.html"><img src="img/logo-sonda-white.svg"></a></div>
+            <div class="header__nav">
+              <div class="header__nav__bg"></div>
+              <div class="header__nav__nav">
+                <div class="header__nav__close">
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="header__nav__back">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <nav>
+                  <ul>
+                    <li class="header__nav__li header__nav__li--digtrans"><a href="service-lvl-1.html">Transformación digital</a></li>
+                    <li class="header__nav__li header__nav__li--tisolut"><a href="service-lvl-1.html">Soluciones TI</a></li>
+                    <li><a href="industries.html">Industrias</a>
+                      <ul class="header__nav__li__blocked">
+                        <li><a href="industries-single.html">Banca</a></li>
+                        <li><a href="industries-single.html">Educación</a></li>
+                        <li><a href="industries-single.html">Gobierno</a></li>
+                        <li><a href="industries-single.html">Manufactura</a></li>
+                        <li><a href="industries-single.html">Minería</a></li>
+                        <li><a href="industries-single.html">Retail</a></li>
+                        <li><a href="industries-single.html">Salud</a></li>
+                        <li><a href="industries-single.html">Transporte</a></li>
+                        <li><a href="industries-single.html">Utilities</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="partners.html">Partners</a></li>
+                    <li><a href="investors.html">Inversionistas</a></li>
+                    <li><a href="aboutus.html">Sobre SONDA</a>
+                      <ul>
+                        <li><a href="aboutus.html">Por qué SONDA</a></li>
+                        <!--li: a(href="#") Historia-->
+                        <!--li: a(href="#") Presencia Regional-->
+                        <!--li: a(href="#") Estrategia de calidad-->
+                        <!--li: a(href="#") Innovación-->
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="news.html">Sala de prensa</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="careers.html">Carreras</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="header__right">
+              <div class="header__item header__item--search--mobile"><span class="fa fa-search"></span></div>
+              <div class="header__item header__item--social"><a href="#" target="_blank"><span class="fa fa-linkedin"></span></a></div>
+              <div class="header__item header__item--lang">
+                <div class="header__item__symbol"><span class="fa fa-globe"></span><span class="fa fa-angle-down"></span></div>
+                <div class="header__item__nav">
+                  <ul>
+                    <li><a href="#">Español<img src="img/icons/chile.png"></a></li>
+                    <li><a href="#">English<img src="img/icons/chile.png"></a></li>
+                    <li><a href="#">Português<img src="img/icons/chile.png"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__supernav">
+        <div class="supernav">
+          <div class="supernav__bg"></div>
+          <div class="supernav__els">
+            <div class="supernav__el supernav__el--digtrans">
+              <div class="supernav__aside">
+                <ul>
+                  <li>Ciberseguridad</li>
+                  <li>Big Data & Analytics</li>
+                  <li>Movilidad</li>
+                  <li>IoT</li>
+                  <li>IA</li>
+                  <li>Blockchain</li>
+                  <li>Outsourcing Transformacional</li>
+                </ul>
+              </div>
+              <div class="supernav__bodies">
+                <div class="supernav__body">
+                  <div class="cols">
+                    <div class="col-md-6">
+                      <h3>Ciberseguridad</h3>
+                      <ul>
+                        <li><a href="service-lvl-3.html">Security Assessment</a></li>
+                        <li><a href="service-lvl-3.html">Endpoint Security Services</a></li>
+                        <li><a href="service-lvl-3.html">Infrastructure Security Services</a></li>
+                        <li><a href="service-lvl-3.html">Cloud Security Services</a></li>
+                        <li><a href="service-lvl-3.html">Aplicaciones</a></li>
+                        <li><a href="service-lvl-3.html">SOC <span style="color:red;">???</span></a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="content">
+                        <p>Ligula purus ante ornare curabitur gravida bibendum risus fusce ornare. Inceptos dictum quisque vitae dui ante porta suscipit nisi aliquam odio sapien cursus elit in pulvinar nullam sociosqu ligula nam.
+                        </p>
+                        <ul>
+                          <li>Rutrum massa
+                          </li>
+                          <li>Volutpat diam
+                          </li>
+                          <li>Commodo potenti
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="supernav__body">
+                  <div class="cols">
+                    <div class="col-md-6">
+                      <h3>Big Data & Analytics</h3>
+                      <ul>
+                        <li><a href="service-lvl-3.html">Soluciones Big Data</a></li>
+                        <li><a href="service-lvl-3.html">Bank Analytics</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="content">
+                        <p>Eu convallis non mauris purus curabitur ullamcorper aliquam torquent blandit taciti leo non curae vivamus quam ac ut inceptos mi.
+                        </p>
+                        <ul>
+                          <li>Est imperdiet
+                          </li>
+                          <li>Ac non
+                          </li>
+                          <li>Etiam habitasse
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="supernav__body">
+                  <div class="cols">
+                    <div class="col-md-6">
+                      <h3>Movilidad</h3>
+                      <ul>
+                        <li><a href="service-lvl-3.html">EMS - Enterprise Mobility Services</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="content">
+                        <p>Semper conubia scelerisque nunc leo tempus tincidunt tempor aptent praesent leo rhoncus interdum ante platea inceptos sodales laoreet mauris quisque.
+                        </p>
+                        <ul>
+                          <li>Volutpat risus
+                          </li>
+                          <li>Curae accumsan
+                          </li>
+                          <li>Auctor lacinia
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="supernav__body">
+                  <div class="cols">
+                    <div class="col-md-6">
+                      <h3>IoT</h3>
+                      <ul>
+                        <li><a href="service-lvl-3.html">Smart Transport</a></li>
+                        <li><a href="service-lvl-3.html">Smart Safety</a></li>
+                        <li><a href="service-lvl-3.html">Smart Lighting</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="content">
+                        <p>Ad fusce praesent odio integer aliquam purus donec pellentesque vulputate mi dictumst integer senectus tristique mi faucibus curabitur volutpat enim.
+                        </p>
+                        <ul>
+                          <li>Tortor rutrum
+                          </li>
+                          <li>Aliquam a
+                          </li>
+                          <li>Varius taciti
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="supernav__body">
+                  <div class="cols">
+                    <div class="col-md-6">
+                      <h3>IA</h3>
+                      <ul>
+                        <li><a href="service-lvl-3.html">???</a></li>
+                        <li><a href="service-lvl-3.html">???</a></li>
+                        <li><a href="service-lvl-3.html">???</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="content">
+                        <p>Eu mi mauris quisque augue velit a eget ante aptent hendrerit curabitur sagittis vel semper lacinia torquent a netus fringilla.
+                        </p>
+                        <ul>
+                          <li>Tristique porttitor
+                          </li>
+                          <li>Netus suspendisse
+                          </li>
+                          <li>Luctus vestibulum
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="supernav__body">
+                  <div class="cols">
+                    <div class="col-md-6">
+                      <h3>Blockchain</h3>
+                      <ul>
+                        <li><a href="service-lvl-3.html">???</a></li>
+                        <li><a href="service-lvl-3.html">???</a></li>
+                        <li><a href="service-lvl-3.html">???</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="content">
+                        <p>Aliquam accumsan augue accumsan habitant hendrerit tellus fermentum sociosqu magna tellus interdum a rutrum colus venenatis cursus lectus adipiscing lobortis.
+                        </p>
+                        <ul>
+                          <li>Aptent leo
+                          </li>
+                          <li>Blandit convallis
+                          </li>
+                          <li>In vivamus
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="supernav__body">
+                  <div class="cols">
+                    <div class="col-md-6">
+                      <h3>Outsourcing Transformacional</h3>
+                      <ul>
+                        <li><a href="service-lvl-3.html">???</a></li>
+                        <li><a href="service-lvl-3.html">???</a></li>
+                        <li><a href="service-lvl-3.html">???</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="content">
+                        <p>Nec class curabitur eros per quisque lectus risus fermentum sem aenean nulla tempus praesent quis orci rutrum ut eleifend dictum.
+                        </p>
+                        <ul>
+                          <li>Viverra litora
+                          </li>
+                          <li>Semper ligula
+                          </li>
+                          <li>Nibh platea
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="supernav__footer">
+                <article class="article--simple">
+                  <div class="article__icon"><img src="img/icons/computing-cloud.svg"></div>
+                  <h3 class="article__title"><a href="#">Cloud</a></h3>
+                </article>
+                <article class="article--simple">
+                  <div class="article__icon"><img src="img/icons/server.svg"></div>
+                  <h3 class="article__title"><a href="#">Hosting</a></h3>
+                </article>
+                <article class="article--simple">
+                  <div class="article__icon"><img src="img/icons/cube.svg"></div>
+                  <h3 class="article__title"><a href="#">Inteligencia artificial</a></h3>
+                </article>
+                <article class="article--simple">
+                  <div class="article__icon"><img src="img/icons/diamond.svg"></div>
+                  <h3 class="article__title"><a href="#">Proyectos de integración</a></h3>
+                </article>
+              </div>
+            </div>
+            <div class="supernav__el supernav__el--tisolut">
+              <div class="supernav__aside">
+                <ul>
+                  <li class="current">Datacenter</li>
+                  <li>Cloud</li>
+                  <li>Workplace Services</li>
+                  <li>Soluciones de Infraestructura</li>
+                  <li>Outsourcing TI</li>
+                  <li>Soluciones de Negocio</li>
+                  <li>Servicios TI</li>
+                </ul>
+              </div>
+              <div class="supernav__bodies">
+                <div class="supernav__body">
+                  <div class="cols">
+                    <div class="col-md-6">
+                      <h3>Datacenter</h3>
+                      <ul>
+                        <li><a href="service-lvl-3.html">Facilities</a></li>
+                        <li><a href="service-lvl-3.html">Managed Services</a></li>
+                        <li><a href="service-lvl-3.html">SOC <span style="color:red;">???</span></a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="content">
+                        <p>Nibh eros quisque torquent quis elit erat nec commodo maecenas erat varius sodales et euismod rhoncus turpis posuere non donec.
+                        </p>
+                        <ul>
+                          <li>Lacinia posuere
+                          </li>
+                          <li>Pharetra nostra
+                          </li>
+                          <li>Bibendum risus
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="supernav__body">
+                  <div class="cols">
+                    <div class="col-md-6">
+                      <h3>Cloud</h3>
+                      <ul>
+                        <li><a href="service-lvl-3.html">Cloud Empresarial SONDA</a></li>
+                        <li><a href="service-lvl-3.html">Cloud para SAP HANA</a></li>
+                        <li><a href="service-lvl-3-azure.html">Managed Azure</a></li>
+                        <li><a href="service-lvl-3.html">Multicloud</a></li>
+                        <li><a href="service-lvl-3.html">Managed AWS</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="content">
+                        <p>Cubilia bibendum vivamus arcu porta velit eget convallis suscipit varius colus vulputate nostra litora curabitur porttitor nunc aptent tristique fames.
+                        </p>
+                        <ul>
+                          <li>Imperdiet ornare
+                          </li>
+                          <li>Aenean tellus
+                          </li>
+                          <li>Vel morbi
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="supernav__body">
+                  <div class="cols">
+                    <div class="col-md-6">
+                      <h3>Workplace Services</h3>
+                      <ul>
+                        <li><a href="service-lvl-3.html">Managed Device Services</a></li>
+                        <li><a href="service-lvl-3.html">Soporte Workplace</a></li>
+                        <li><a href="service-lvl-3.html">Workplace Solutions</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="content">
+                        <p>Sed sapien at lobortis faucibus rutrum at donec senectus vehicula vestibulum cubilia volutpat tristique elit non torquent a curabitur etiam.
+                        </p>
+                        <ul>
+                          <li>Elit integer
+                          </li>
+                          <li>Proin dictumst
+                          </li>
+                          <li>Inceptos porttitor
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="supernav__body">
+                  <div class="cols">
+                    <div class="col-md-6">
+                      <h3>Soluciones de Infraestructura</h3>
+                      <ul>
+                        <li><a href="service-lvl-3.html">Soluciones de Valor</a></li>
+                        <li><a href="service-lvl-3.html">Servicios Profesionales</a></li>
+                        <li><a href="service-lvl-3.html">Proyectos de Integración</a></li>
+                        <li><a href="service-lvl-3.html">Software</a></li>
+                        <li><a href="service-lvl-3.html">Equipamiento</a></li>
+                        <li><a href="service-lvl-3.html">Servicios de Infraestructura</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="content">
+                        <p>Et ac ultricies molestie potenti ut posuere etiam eleifend himenaeos quis curabitur phasellus colus litora luctus quis suspendisse convallis consectetur.
+                        </p>
+                        <ul>
+                          <li>Risus hac
+                          </li>
+                          <li>Aliquam viverra
+                          </li>
+                          <li>Erat ad
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="supernav__body">
+                  <div class="cols">
+                    <div class="col-md-6">
+                      <h3>Outsourcing TI</h3>
+                      <ul>
+                        <li><a href="service-lvl-3.html">Outsourcing Transformacional</a></li>
+                        <li><a href="service-lvl-3.html">Managed Device Services</a></li>
+                        <li><a href="service-lvl-3.html">Datacenter</a></li>
+                        <li><a href="service-lvl-3.html">Soporte Workplace</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="content">
+                        <p>Imperdiet nunc in consectetur erat magna ante quisque elit morbi adipiscing nibh luctus platea suscipit per pretium egestas ultricies venenatis.
+                        </p>
+                        <ul>
+                          <li>Ac adipiscing
+                          </li>
+                          <li>Volutpat scelerisque
+                          </li>
+                          <li>Primis morbi
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="supernav__body">
+                  <div class="cols">
+                    <div class="col-md-6">
+                      <h3>Soluciones de Negocio</h3>
+                      <ul>
+                        <li><a href="service-lvl-3.html">Salud</a></li>
+                        <li><a href="service-lvl-3.html">Solución Comercio Exterior</a></li>
+                        <li><a href="service-lvl-3.html">Solución Gestión Tributaria y Contable</a></li>
+                        <li><a href="service-lvl-3.html">Transporte y Logística</a></li>
+                        <li><a href="service-lvl-3.html">Manufactura</a></li>
+                        <li><a href="service-lvl-3.html">Gobierno y Sector Público</a></li>
+                        <li><a href="service-lvl-3.html">Utilities</a></li>
+                        <li><a href="service-lvl-3.html">Solución de Control Financiero y Logístico</a></li>
+                        <li><a href="service-lvl-3.html">Banca y Finanzas</a></li>
+                        <li><a href="service-lvl-3.html">Cross Market Solutions</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="content">
+                        <p>Gravida tristique sagittis volutpat malesuada justo colus curabitur convallis hendrerit dictumst cras consequat aliquet lectus curae consequat sollicitudin lacinia eleifend.
+                        </p>
+                        <ul>
+                          <li>Placerat quam
+                          </li>
+                          <li>Donec donec
+                          </li>
+                          <li>Sed odio
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="supernav__body">
+                  <div class="cols">
+                    <div class="col-md-6">
+                      <h3>Servicios TI</h3>
+                      <ul>
+                        <li><a href="service-lvl-3.html">Servicios para Aplicaciones</a></li>
+                        <li><a href="service-lvl-3.html">Servicios de Infraestructura</a></li>
+                        <li><a href="service-lvl-3.html">Application Management Services - AMS</a></li>
+                        <li><a href="service-lvl-3.html">Servicios Profesionales</a></li>
+                        <li><a href="service-lvl-3.html">Managed Services</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="content">
+                        <p>Neque metus augue arcu conubia per faucibus tempor accumsan vel nisl curabitur eros facilisis nullam fringilla adipiscing congue curabitur vulputate.
+                        </p>
+                        <ul>
+                          <li>Sagittis ut
+                          </li>
+                          <li>Cubilia hac
+                          </li>
+                          <li>Consequat pellentesque
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="supernav__footer">
+                <article class="article--simple">
+                  <div class="article__icon"><img src="img/icons/computing-cloud.svg"></div>
+                  <h3 class="article__title"><a href="#">Lorem</a></h3>
+                </article>
+                <article class="article--simple">
+                  <div class="article__icon"><img src="img/icons/server.svg"></div>
+                  <h3 class="article__title"><a href="#">Ipsum</a></h3>
+                </article>
+                <article class="article--simple">
+                  <div class="article__icon"><img src="img/icons/cube.svg"></div>
+                  <h3 class="article__title"><a href="#">Parsec</a></h3>
+                </article>
+                <article class="article--simple">
+                  <div class="article__icon"><img src="img/icons/diamond.svg"></div>
+                  <h3 class="article__title"><a href="#">Consectetur</a></h3>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="sections">
+      <section class="section--header">
+        <div class="section__bg">
+          <div class="bg"><img src="img/uploads/14.jpg"></div>
+        </div>
+        <div class="section__wrap">
+          <div class="section__body section__body--center">
+            <h1 class="section__title">Casos de éxito</h1>
+            <p class="section__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia placeat debitis atque quis rem consectetur aut quasi fugiat blanditiis quisquam ducimus voluptates porro culpa odio repellendus.</p>
+          </div>
+        </div>
+      </section>
+      <section class="section--experience section--white">
+        <div class="section__wrap">
+          <div class="section__body">
+            <div class="cols">
+              <div class="col-md-12 col-lg-6">
+                <article class="article--experience-small">
+                  <div class="article__bg">
+                    <div class="bg"><img src="img/uploads/27.jpg"/></div>
+                  </div>
+                  <div class="article__grad"></div>
+                  <div class="article__wrap">
+                    <div class="article__body">
+                      <div class="article__content">
+                        <h3 class="article__title">SONDA e IANSA son protagonistas de hito tecnológico para empresas latinoamericanas</h3>
+                        <p class="article__description">IANSA se convierte en la primera empresa de la región que migra sus servicios SAP Hana a la nube Azure con el apoyo de SONDA</p>
+                        <div class="article__buttons"><a href="#" class="btn btn--transparent">Conoce cómo<span class="fa fa-angle-right"></span></a></div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="col-md-12 col-lg-6">
+                <article class="article--experience-small">
+                  <div class="article__bg">
+                    <div class="bg"><img src="img/uploads/30.jpg"/></div>
+                  </div>
+                  <div class="article__grad"></div>
+                  <div class="article__wrap">
+                    <div class="article__body">
+                      <div class="article__content">
+                        <h3 class="article__title">Solución Smart Lighting de SONDA logrará mejorar eficiencia energética de alumbrado público en Paysandú Uruguay</h3>
+                        <p class="article__description">La Intendencia Departamental de Paysandú confió en SONDA para la renovación de sus luminarias a tecnología LED con georreferenciación.</p>
+                        <div class="article__buttons"><a href="#" class="btn btn--transparent">Conoce cómo<span class="fa fa-angle-right"></span></a></div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="col-md-12 col-lg-6">
+                <article class="article--experience-small">
+                  <div class="article__bg">
+                    <div class="bg"><img src="img/uploads/33.jpg"/></div>
+                  </div>
+                  <div class="article__grad"></div>
+                  <div class="article__wrap">
+                    <div class="article__body">
+                      <div class="article__content">
+                        <h3 class="article__title">Sistema de Transporte Público de Buenos Aires confía en SONDA</h3>
+                        <p class="article__description">Nación Servicios, empresa a cargo de administración de SUBE para Transporte Público de Argentina, adjudicó a SONDA la implementación del nuevo kit de equipamiento y software embarcado de su sistema de cobro.</p>
+                        <div class="article__buttons"><a href="#" class="btn btn--transparent">Conoce cómo<span class="fa fa-angle-right"></span></a></div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="col-md-12 col-lg-6">
+                <article class="article--experience-small">
+                  <div class="article__bg">
+                    <div class="bg"><img src="img/uploads/27.jpg"/></div>
+                  </div>
+                  <div class="article__grad"></div>
+                  <div class="article__wrap">
+                    <div class="article__body">
+                      <div class="article__content">
+                        <h3 class="article__title">SONDA e IANSA son protagonistas de hito tecnológico para empresas latinoamericanas</h3>
+                        <p class="article__description">IANSA se convierte en la primera empresa de la región que migra sus servicios SAP Hana a la nube Azure con el apoyo de SONDA</p>
+                        <div class="article__buttons"><a href="#" class="btn btn--transparent">Conoce cómo<span class="fa fa-angle-right"></span></a></div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="col-md-12 col-lg-6">
+                <article class="article--experience-small">
+                  <div class="article__bg">
+                    <div class="bg"><img src="img/uploads/30.jpg"/></div>
+                  </div>
+                  <div class="article__grad"></div>
+                  <div class="article__wrap">
+                    <div class="article__body">
+                      <div class="article__content">
+                        <h3 class="article__title">Solución Smart Lighting de SONDA logrará mejorar eficiencia energética de alumbrado público en Paysandú Uruguay</h3>
+                        <p class="article__description">La Intendencia Departamental de Paysandú confió en SONDA para la renovación de sus luminarias a tecnología LED con georreferenciación.</p>
+                        <div class="article__buttons"><a href="#" class="btn btn--transparent">Conoce cómo<span class="fa fa-angle-right"></span></a></div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="col-md-12 col-lg-6">
+                <article class="article--experience-small">
+                  <div class="article__bg">
+                    <div class="bg"><img src="img/uploads/33.jpg"/></div>
+                  </div>
+                  <div class="article__grad"></div>
+                  <div class="article__wrap">
+                    <div class="article__body">
+                      <div class="article__content">
+                        <h3 class="article__title">Sistema de Transporte Público de Buenos Aires confía en SONDA</h3>
+                        <p class="article__description">Nación Servicios, empresa a cargo de administración de SUBE para Transporte Público de Argentina, adjudicó a SONDA la implementación del nuevo kit de equipamiento y software embarcado de su sistema de cobro.</p>
+                        <div class="article__buttons"><a href="#" class="btn btn--transparent">Conoce cómo<span class="fa fa-angle-right"></span></a></div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="col-md-12 col-lg-6">
+                <article class="article--experience-small">
+                  <div class="article__bg">
+                    <div class="bg"><img src="img/uploads/27.jpg"/></div>
+                  </div>
+                  <div class="article__grad"></div>
+                  <div class="article__wrap">
+                    <div class="article__body">
+                      <div class="article__content">
+                        <h3 class="article__title">SONDA e IANSA son protagonistas de hito tecnológico para empresas latinoamericanas</h3>
+                        <p class="article__description">IANSA se convierte en la primera empresa de la región que migra sus servicios SAP Hana a la nube Azure con el apoyo de SONDA</p>
+                        <div class="article__buttons"><a href="#" class="btn btn--transparent">Conoce cómo<span class="fa fa-angle-right"></span></a></div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="col-md-12 col-lg-6">
+                <article class="article--experience-small">
+                  <div class="article__bg">
+                    <div class="bg"><img src="img/uploads/30.jpg"/></div>
+                  </div>
+                  <div class="article__grad"></div>
+                  <div class="article__wrap">
+                    <div class="article__body">
+                      <div class="article__content">
+                        <h3 class="article__title">Solución Smart Lighting de SONDA logrará mejorar eficiencia energética de alumbrado público en Paysandú Uruguay</h3>
+                        <p class="article__description">La Intendencia Departamental de Paysandú confió en SONDA para la renovación de sus luminarias a tecnología LED con georreferenciación.</p>
+                        <div class="article__buttons"><a href="#" class="btn btn--transparent">Conoce cómo<span class="fa fa-angle-right"></span></a></div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+          <div class="section__footer">
+            <div class="section__buttons">
+              <div class="pagination"><a class="current">1</a><a>2</a><a>3</a><a>4</a><span>..</span><a>20</a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <div class="footer__bg">
+        <div class="bg"><img src="img/uploads/8.jpg"></div>
+      </div>
+      <div class="footer__wrap">
+        <div class="footer__primary">
+          <div class="cols">
+            <div class="col-xs-12 col-md-12">
+              <div class="footer__logo"><img src="img/logo-sonda.png"></div>
+            </div>
+            <div class="col-xs-12 col-md-12">
+              <div class="footer__countries">
+                <ul>
+                  <li>Argentina
+                    <ul>
+                      <li><span class="fa fa-map-marker"></span> <span>Dirección:</span> Alsina 772, Buenos Aires</li>
+                      <li><span class="fa fa-phone"></span> <span>Teléfono:</span> (54-11) 4331 7500</li>
+                    </ul>
+                  </li>
+                  <li>Brasil
+                    <ul>
+                      <li><span class="fa fa-map-marker"></span> <span>Dirección:</span> Alameda Europa, 1206, Condomínio Polo Tamboré, Santana de Parnaíba - SP</li>
+                      <li><span class="fa fa-phone"></span> <span>Teléfonos:</span> (55-11) 3126 6000<br />(55-11) 3126 7000</li>
+                    </ul>
+                  </li>
+                  <li>Chile
+                    <ul>
+                      <li><span class="fa fa-map-marker"></span> <span>Dirección:</span> Teatinos 500, Santiago</li>
+                      <li><span class="fa fa-phone"></span> <span>Teléfono:</span> (56-2) 2657 50 00</li>
+                    </ul>
+                  </li>
+                  <li>Colombia
+                    <ul>
+                      <li><span class="fa fa-map-marker"></span> <span>Dirección:</span> Av. Cra. 45 (Autopista Norte) N°118–68, Bogotá</li>
+                      <li><span class="fa fa-phone"></span> <span>Teléfono:</span> (57-1) 6466565</li>
+                    </ul>
+                  </li>
+                  <li>Costa rica
+                    <ul>
+                      <li><span class="fa fa-map-marker"></span> <span>Dirección:</span> Ofiplaza del Este, Edificio A Piso 3 Barrio Dent, San José</li>
+                      <li><span class="fa fa-phone"></span> <span>Teléfono:</span> (50-6) 2224 9596</li>
+                    </ul>
+                  </li>
+                  <li>Ecuador
+                    <ul>
+                      <li><span class="fa fa-map-marker"></span> <span>Dirección:</span> Av. Los Shyris N36-166 y Naciones Unidas, Quito</li>
+                      <li><span class="fa fa-phone"></span> <span>Teléfono:</span> (593-2) 373 1570</li>
+                    </ul>
+                  </li>
+                  <li>México
+                    <ul>
+                      <li><span class="fa fa-map-marker"></span> <span>Dirección:</span> Av. Revolución 639 Col. San Pedro de los Pinos Del. Benito Juárez c.p. 03800, México D.F.</li>
+                      <li><span class="fa fa-phone"></span> <span>Teléfono:</span>  5255 5010 7000</li>
+                      <li><span class="fa fa-map-marker"></span> <span>Dirección:</span> Boulevard Adolfo López Mateos 2259 Col. Atlamaya cp 01760, Ciudad de México.</li>
+                      <li><span class="fa fa-map-marker"></span> <span>Dirección:</span> Culiacán 123 Col. Hipódromo Del. Cuauhtémoc c. p. 06100.</li>
+                      <li><span class="fa fa-phone"></span> <span>Teléfono:</span>  (52-55) 1167 37000</li>
+                    </ul>
+                  </li>
+                  <li>Panamá
+                    <ul>
+                      <li><span class="fa fa-map-marker"></span> <span>Dirección:</span> Alsina 772, Buenos Aires</li>
+                      <li><span class="fa fa-phone"></span> <span>Teléfono:</span> (54-11) 4331 7500</li>
+                    </ul>
+                  </li>
+                  <li>Perú
+                    <ul>
+                      <li><span class="fa fa-map-marker"></span> <span>Dirección:</span> Avenida Javier Prado Este 444 Piso 16, San Isidro, Lima</li>
+                      <li><span class="fa fa-phone"></span> <span>Teléfono:</span> (51-1) 616 7000</li>
+                    </ul>
+                  </li>
+                  <li>Uruguay
+                    <ul>
+                      <li><span class="fa fa-map-marker"></span> <span>Dirección:</span> Plaza Independencia 831 Piso 11, Montevideo</li>
+                      <li><span class="fa fa-phone"></span> <span>Teléfono:</span> (59-82) 908 3000</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-12">
+              <div class="footer__social">
+                <ul>
+                  <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+                  <li><a href="#"><span class="fa fa-youtube"></span></a></li>
+                  <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                  <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__secondary">
+          <!--.footer__nav
+          .cols
+          	.col-xs-6.col-sm-4
+          		ul
+          			li: a(href="#") Acerca
+          			li: a(href="#") Ayuda
+          			li: a(href="#") Contacto
+          			li: a(href="#") Terminos
+          			li: a(href="#") Privacidad
+          	.col-xs-6.col-sm-4
+          		ul
+          			li: a(href="#") Servicios
+          			li: a(href="#") Productos
+          			li: a(href="#") Industrias
+          			li: a(href="#") Testimonios
+          			li: a(href="#") Inversionistas
+          	.col-xs-12.col-sm-4
+          		ul
+          			li: a(href="#") Marca
+          			li: a(href="#") Trabaja con nosotros
+          			li: a(href="#") Equipo
+          
+          -->
+          <div class="footer__others">
+            <ul>
+              <li><a href="#">Información de Interés y Transacciones Relevantes</a></li>
+              <li><a href="#">Manual Manejo Información</a></li>
+              <li><a href="#">Canal de Denuncias</a></li>
+            </ul>
+          </div>
+          <div class="footer__others footer__others--mexico">
+            <h4 class="footer__title">Aviso de privacidad MX</h4>
+            <ul>
+              <li><a href="#">SONDA México</a></li>
+              <li><a href="#">Ingeniería en Servicios de Informática</a></li>
+            </ul>
+          </div>
+          <div class="footer__copyright">Copyright © 2018 SONDA. Todos los derechos reservados</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

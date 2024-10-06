@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>SONDA</title>
+    <meta charset="UTF-8">
+    <link href="img/favicon.png" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="css/main.css?v=80092" rel="stylesheet" type="text/css">
+    <script src="js/main.js?v=80092" type="text/javascript"></script>
+    <!--script(src='https://f.vimeocdn.com/js/froogaloop2.min.js')-->
+    <script src="https://cdn.plyr.io/3.4.6/plyr.js"></script>
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+    <!-- Meta tags facebook-->
+    <meta property="og:title" content="#">
+    <meta property="og:description" content="#">
+    <meta property="og:image" content="#">
+    <!-- Meta tags twitter cards-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="#">
+    <meta name="twitter:description" content="#">
+    <meta name="twitter:image" content="#">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+    <!--[if lt IE 9]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+    
+    
+  </head>
+  <body>
+    <header>
+      <div class="header__primary">
+        <div class="header__wrap">
+          <div class="header__search">
+            <form action="search.html" method="get"><span class="fa fa-search"></span>
+              <input type="text" name="s" placeholder="Buscar producto">
+            </form>
+          </div>
+          <div class="header__inner">
+            <div class="header__logo header__logo--color"><a href="index.html"><img src="img/logo-sonda.svg"></a></div>
+            <div class="header__logo header__logo--white"><a href="index.html"><img src="img/logo-sonda-white.svg"></a></div>
+            <div class="header__nav">
+              <div class="header__nav__bg"></div>
+              <div class="header__nav__nav">
+                <div class="header__nav__close">
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="header__nav__back">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <nav>
+                  <ul>
+                    <li class="header__nav__li header__nav__li--digtrans"><a href="service-lvl-1.html">Transformación digital</a></li>
+                    <li class="header__nav__li header__nav__li--tisolut"><a href="service-lvl-1.html">Soluciones TI</a></li>
+                    <li><a href="industries.html">Industrias</a>
+                      <ul class="header__nav__li__blocked">
+                        <li><a href="industries-single.html">Banca</a></li>
+                        <li><a href="industries-single.html">Educación</a></li>
+                        <li><a href="industries-single.html">Gobierno</a></li>
+                        <li><a href="industries-single.html">Manufactura</a></li>
+                        <li><a href="industries-single.html">Minería</a></li>
+                        <li><a href="industries-single.html">Retail</a></li>
+                        <li><a href="industries-single.html">Salud</a></li>
+                        <li><a href="industries-single.html">Transporte</a></li>
+                        <li><a href="industries-single.html">Utilities</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="partners.html">Partners</a></li>
+                    <li><a href="investors.html">Inversionistas</a></li>
+                    <li><a href="aboutus.html">Sobre SONDA</a>
+                      <ul>
+                        <li><a href="aboutus.html">Por qué SONDA</a></li>
+                        <!--li: a(href="#") Historia-->
+                        <!--li: a(href="#") Presencia Regional-->
+                        <!--li: a(href="#") Estrategia de calidad-->
+                        <!--li: a(href="#") Innovación-->
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="news.html">Sala de prensa</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="careers.html">Carreras</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="header__right">
+              <div class="header__item header__item--search--mobile"><span class="fa fa-search"></span></div>
+              <div class="header__item header__item--social"><a href="#" target="_blank"><span class="fa fa-linkedin"></span></a></div>
+              <div class="header__item header__item--lang">
+                <div class="header__item__symbol"><span class="fa fa-globe"></span><span class="fa fa-angle-down"></span></div>
+                <div class="header__item__nav">
+                  <ul>
+                    <li><a href="#">Español<img src="img/icons/chile.png"></a></li>
+                    <li><a href="#">English<img src="img/icons/chile.png"></a></li>
+                    <li><a href="#">Português<img src="img/icons/chile.png"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__supernav">
+        <div class="supernav">
+          <div class="supernav__bg"></div>
+          <div class="supernav__els">
+            <div class="supernav__el supernav__el--digtrans">
+              <div class="supernav__aside">
+                <ul>
+                  <li>Ciberseguridad</li>
+                  <li>Big Data & Analytics</li>
+                  <li>Movilidad</li>
+                  <li>IoT</li>
+                  <li>IA</li>
+                  <li>Blockchain</li>
+                  <li>Outsourcing Transformacional</li>
+                </ul>
+              </div>
+              <div class="supernav__bodies">
+                <div class="supernav__body">
+                  <div class="cols">
+                    <div class="col-md-6">
+                      <h3>Ciberseguridad</h3>
+                      <ul>
+                        <li><a href="service-lvl-3.html">Security Assessment</a></li>
+                        <li><a href="service-lvl-3.html">Endpoint Security Services</a></li>
+                        <li><a href="service-lvl-3.html">Infrastructure Security Services</a></li>
+                        <li><a href="service-lvl-3.html">Cloud Security Services</a></li>
+                        <li><a href="service-lvl-3.html">Aplicaciones</a></li>
+                        <li><a href="service-lvl-3.html">SOC <span style="color:red;">???</span></a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="content">
+                        <p>Aliquam blandit mauris vel ornare potenti sagittis laoreet class ac. Aenean bibendum mattis hac donec habitasse dapibus placerat lobortis ligula metus est ante neque porta nam risus nibh tristique dictum.
+                        </p>
+                        <ul>
+                          <li>Libero risus
+                          </li>
+                          <li>Id fames
+                          </li>
+                          <li>Quisque donec
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="supernav__body">
+                  <div class="cols">
+                    <div class="col-md-6">
+                      <h3>Big Data & Analytics</h3>
+                      <ul>
+                        <li><a href="service-lvl-3.html">Soluciones Big Data</a></li>
+                        <li><a href="service-lvl-3.html">Bank Analytics</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="content">
+                        <p>Donec quam ultricies gravida quisque eu quis congue phasellus cras libero netus hac ut quisque phasellus imperdiet netus nullam habitasse.
+                        </p>
+                        <ul>
+                          <li>Inceptos morbi
+                          </li>
+                          <li>Aliquet dui
+                          </li>
+                          <li>Quam fermentum
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="supernav__body">
+                  <div class="cols">
+                    <div class="col-md-6">
+                      <h3>Movilidad</h3>
+                      <ul>
+                        <li><a href="service-lvl-3.html">EMS - Enterprise Mobility Services</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="content">
+                        <p>Fames molestie torquent nam fusce habitant duis venenatis venenatis ut nostra fermentum gravida curabitur scelerisque ultrices odio ullamcorper curabitur faucibus.
+                        </p>
+                        <ul>
+                          <li>Vulputate tincidunt
+                          </li>
+                          <li>Aliquam adipiscing
+                          </li>
+                          <li>Eu facilisis
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="supernav__body">
+                  <div class="cols">
+                    <div class="col-md-6">
+                      <h3>IoT</h3>
+                      <ul>
+                        <li><a href="service-lvl-3.html">Smart Transport</a></li>
+                        <li><a href="service-lvl-3.html">Smart Safety</a></li>
+                        <li><a href="service-lvl-3.html">Smart Lighting</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="content">
+                        <p>Curabitur arcu vestibulum rutrum pretium aliquet nisl at mauris vulputate ultricies porttitor faucibus libero eu turpis consequat eu auctor conubia.
+                        </p>
+                        <ul>
+                          <li>Consectetur etiam
+                          </li>
+                          <li>Lobortis volutpat
+                          </li>
+                          <li>Sollicitudin aliquet
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="supernav__body">
+                  <div class="cols">
+                    <div class="col-md-6">
+                      <h3>IA</h3>
+                      <ul>
+                        <li><a href="service-lvl-3.html">???</a></li>
+                        <li><a href="service-lvl-3.html">???</a></li>
+                        <li><a href="service-lvl-3.html">???</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="content">
+                        <p>Etiam bibendum a sed proin pretium viverra quis tincidunt netus pulvinar donec nullam in cubilia lacus vel vel a elit.
+                        </p>
+                        <ul>
+                          <li>Morbi donec
+                          </li>
+                          <li>Aliquam magna
+                          </li>
+                          <li>Ac vel
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="supernav__body">
+                  <div class="cols">
+                    <div class="col-md-6">
+                      <h3>Blockchain</h3>
+                      <ul>
+                        <li><a href="service-lvl-3.html">???</a></li>
+                        <li><a href="service-lvl-3.html">???</a></li>
+                        <li><a href="service-lvl-3.html">???</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="content">
+                        <p>Diam lacinia porttitor curabitur phasellus morbi ultrices porta mauris metus neque potenti enim aliquet ullamcorper vivamus dictum arcu pharetra arcu.
+                        </p>
+                        <ul>
+                          <li>Et lectus
+                          </li>
+                          <li>Pulvinar aptent
+                          </li>
+                          <li>Odio ligula
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="supernav__body">
+                  <div class="cols">
+                    <div class="col-md-6">
+                      <h3>Outsourcing Transformacional</h3>
+                      <ul>
+                        <li><a href="service-lvl-3.html">???</a></li>
+                        <li><a href="service-lvl-3.html">???</a></li>
+                        <li><a href="service-lvl-3.html">???</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="content">
+                        <p>Massa commodo fusce aliquam vestibulum odio semper iaculis nam erat dui condimentum torquent magna mollis est senectus pellentesque velit class.
+                        </p>
+                        <ul>
+                          <li>Non enim
+                          </li>
+                          <li>Facilisis mauris
+                          </li>
+                          <li>Aptent viverra
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="supernav__footer">
+                <article class="article--simple">
+                  <div class="article__icon"><img src="img/icons/computing-cloud.svg"></div>
+                  <h3 class="article__title"><a href="#">Cloud</a></h3>
+                </article>
+                <article class="article--simple">
+                  <div class="article__icon"><img src="img/icons/server.svg"></div>
+                  <h3 class="article__title"><a href="#">Hosting</a></h3>
+                </article>
+                <article class="article--simple">
+                  <div class="article__icon"><img src="img/icons/cube.svg"></div>
+                  <h3 class="article__title"><a href="#">Inteligencia artificial</a></h3>
+                </article>
+                <article class="article--simple">
+                  <div class="article__icon"><img src="img/icons/diamond.svg"></div>
+                  <h3 class="article__title"><a href="#">Proyectos de integración</a></h3>
+                </article>
+              </div>
+            </div>
+            <div class="supernav__el supernav__el--tisolut">
+              <div class="supernav__aside">
+                <ul>
+                  <li class="current">Datacenter</li>
+                  <li>Cloud</li>
+                  <li>Workplace Services</li>
+                  <li>Soluciones de Infraestructura</li>
+                  <li>Outsourcing TI</li>
+                  <li>Soluciones de Negocio</li>
+                  <li>Servicios TI</li>
+                </ul>
+              </div>
+              <div class="supernav__bodies">
+                <div class="supernav__body">
+                  <div class="cols">
+                    <div class="col-md-6">
+                      <h3>Datacenter</h3>
+                      <ul>
+                        <li><a href="service-lvl-3.html">Facilities</a></li>
+                        <li><a href="service-lvl-3.html">Managed Services</a></li>
+                        <li><a href="service-lvl-3.html">SOC <span style="color:red;">???</span></a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="content">
+                        <p>Velit lectus arcu varius curabitur lobortis vehicula in laoreet aptent lacus faucibus porttitor lobortis lobortis erat diam venenatis curabitur tortor.
+                        </p>
+                        <ul>
+                          <li>Lobortis porttitor
+                          </li>
+                          <li>Tortor ultricies
+                          </li>
+                          <li>Fringilla consequat
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="supernav__body">
+                  <div class="cols">
+                    <div class="col-md-6">
+                      <h3>Cloud</h3>
+                      <ul>
+                        <li><a href="service-lvl-3.html">Cloud Empresarial SONDA</a></li>
+                        <li><a href="service-lvl-3.html">Cloud para SAP HANA</a></li>
+                        <li><a href="service-lvl-3-azure.html">Managed Azure</a></li>
+                        <li><a href="service-lvl-3.html">Multicloud</a></li>
+                        <li><a href="service-lvl-3.html">Managed AWS</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="content">
+                        <p>Netus mauris et id euismod arcu nisi rutrum libero dui eu eros duis habitasse etiam porta laoreet turpis nam fames.
+                        </p>
+                        <ul>
+                          <li>Donec porttitor
+                          </li>
+                          <li>Netus dictumst
+                          </li>
+                          <li>Vehicula aliquam
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="supernav__body">
+                  <div class="cols">
+                    <div class="col-md-6">
+                      <h3>Workplace Services</h3>
+                      <ul>
+                        <li><a href="service-lvl-3.html">Managed Device Services</a></li>
+                        <li><a href="service-lvl-3.html">Soporte Workplace</a></li>
+                        <li><a href="service-lvl-3.html">Workplace Solutions</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="content">
+                        <p>Pharetra euismod venenatis suspendisse arcu sociosqu posuere conubia hendrerit suspendisse ac conubia hac placerat est pulvinar ultricies condimentum quisque nisi.
+                        </p>
+                        <ul>
+                          <li>Neque erat
+                          </li>
+                          <li>Consectetur nisl
+                          </li>
+                          <li>Molestie vestibulum
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="supernav__body">
+                  <div class="cols">
+                    <div class="col-md-6">
+                      <h3>Soluciones de Infraestructura</h3>
+                      <ul>
+                        <li><a href="service-lvl-3.html">Soluciones de Valor</a></li>
+                        <li><a href="service-lvl-3.html">Servicios Profesionales</a></li>
+                        <li><a href="service-lvl-3.html">Proyectos de Integración</a></li>
+                        <li><a href="service-lvl-3.html">Software</a></li>
+                        <li><a href="service-lvl-3.html">Equipamiento</a></li>
+                        <li><a href="service-lvl-3.html">Servicios de Infraestructura</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="content">
+                        <p>Rhoncus et sed vel iaculis litora orci ultrices quam consequat ullamcorper leo feugiat massa eleifend erat curabitur consequat morbi nibh.
+                        </p>
+                        <ul>
+                          <li>Tortor ut
+                          </li>
+                          <li>Egestas at
+                          </li>
+                          <li>Venenatis nisi
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="supernav__body">
+                  <div class="cols">
+                    <div class="col-md-6">
+                      <h3>Outsourcing TI</h3>
+                      <ul>
+                        <li><a href="service-lvl-3.html">Outsourcing Transformacional</a></li>
+                        <li><a href="service-lvl-3.html">Managed Device Services</a></li>
+                        <li><a href="service-lvl-3.html">Datacenter</a></li>
+                        <li><a href="service-lvl-3.html">Soporte Workplace</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="content">
+                        <p>Commodo ante feugiat accumsan mi lobortis etiam condimentum fames potenti aliquam habitant nisi nullam in sociosqu facilisis dictumst per elementum.
+                        </p>
+                        <ul>
+                          <li>Hac aenean
+                          </li>
+                          <li>Donec laoreet
+                          </li>
+                          <li>Mauris curae
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="supernav__body">
+                  <div class="cols">
+                    <div class="col-md-6">
+                      <h3>Soluciones de Negocio</h3>
+                      <ul>
+                        <li><a href="service-lvl-3.html">Salud</a></li>
+                        <li><a href="service-lvl-3.html">Solución Comercio Exterior</a></li>
+                        <li><a href="service-lvl-3.html">Solución Gestión Tributaria y Contable</a></li>
+                        <li><a href="service-lvl-3.html">Transporte y Logística</a></li>
+                        <li><a href="service-lvl-3.html">Manufactura</a></li>
+                        <li><a href="service-lvl-3.html">Gobierno y Sector Público</a></li>
+                        <li><a href="service-lvl-3.html">Utilities</a></li>
+                        <li><a href="service-lvl-3.html">Solución de Control Financiero y Logístico</a></li>
+                        <li><a href="service-lvl-3.html">Banca y Finanzas</a></li>
+                        <li><a href="service-lvl-3.html">Cross Market Solutions</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="content">
+                        <p>Ante mi luctus pulvinar aliquet velit odio sagittis etiam phasellus auctor class vel vitae vitae ornare blandit interdum blandit fermentum.
+                        </p>
+                        <ul>
+                          <li>Dapibus habitasse
+                          </li>
+                          <li>Ultricies et
+                          </li>
+                          <li>Nulla curabitur
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="supernav__body">
+                  <div class="cols">
+                    <div class="col-md-6">
+                      <h3>Servicios TI</h3>
+                      <ul>
+                        <li><a href="service-lvl-3.html">Servicios para Aplicaciones</a></li>
+                        <li><a href="service-lvl-3.html">Servicios de Infraestructura</a></li>
+                        <li><a href="service-lvl-3.html">Application Management Services - AMS</a></li>
+                        <li><a href="service-lvl-3.html">Servicios Profesionales</a></li>
+                        <li><a href="service-lvl-3.html">Managed Services</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="content">
+                        <p>Curae interdum fringilla phasellus quam malesuada in aenean auctor porttitor torquent nam in quam habitant pulvinar luctus augue in fringilla.
+                        </p>
+                        <ul>
+                          <li>Est sodales
+                          </li>
+                          <li>Consectetur sagittis
+                          </li>
+                          <li>Erat condimentum
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="supernav__footer">
+                <article class="article--simple">
+                  <div class="article__icon"><img src="img/icons/computing-cloud.svg"></div>
+                  <h3 class="article__title"><a href="#">Lorem</a></h3>
+                </article>
+                <article class="article--simple">
+                  <div class="article__icon"><img src="img/icons/server.svg"></div>
+                  <h3 class="article__title"><a href="#">Ipsum</a></h3>
+                </article>
+                <article class="article--simple">
+                  <div class="article__icon"><img src="img/icons/cube.svg"></div>
+                  <h3 class="article__title"><a href="#">Parsec</a></h3>
+                </article>
+                <article class="article--simple">
+                  <div class="article__icon"><img src="img/icons/diamond.svg"></div>
+                  <h3 class="article__title"><a href="#">Consectetur</a></h3>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="sections">
+      <section class="section--header">
+        <div class="section__bg">
+          <div class="bg"><img src="img/uploads/32.jpg"></div>
+        </div>
+        <div class="section__wrap">
+          <div class="section__body">
+            <h1 class="section__title">Inversionistas</h1>
+            <p class="section__description">Nisi fermentum orci taciti metus ad convallis interdum cras vel. Donec sapien a taciti nullam praesent a augue molestie class. Odio suspendisse pellentesque lectus donec tristique lacinia nostra conubia litora tempor venenatis placerat justo quis.
+            </p>
+            <div class="section__buttons"><a href="#" class="btn">Descarga nuestro informe 2018<span class="fa fa-angle-right"></span></a></div>
+          </div>
+          <nav class="section__hnav section__hnav--lg section__hnav--5">
+            <ul>
+              <li class="current"><a href="investors.html">Inicio</a></li>
+              <li><a href="investors-corporate-governance.html">Gobierno corporativo</a></li>
+              <li><a href="investors-financial-information.html">Información financiera</a></li>
+              <li><a href="investors-action.html">Acción</a></li>
+              <li><a href="investors-events-news.html">Eventos y noticias</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <section class="section--investors">
+        <div class="section__wrap">
+          <div class="section__body">
+            <div class="cols cols-gutter-2">
+              <div class="col-xs-12">
+                <article class="article--prices">
+                  <div class="article__header">Precio de la acción de SONDA</div>
+                  <div class="article__body">
+                    <div class="article__price article__price--lg"><span>Precio actual</span><strong>950.01</strong></div>
+                    <div class="article__price"><span>Precio mayor</span><strong>950.01</strong></div>
+                    <div class="article__price"><span>Precio menor</span><strong>950.01</strong></div>
+                    <div class="article__price"><span>Variación</span><strong>950.01</strong></div>
+                  </div>
+                  <div class="article__footer">
+                    <div class="article__updated">Actualizado al 1 de agosto 2018</div>
+                    <div class="artucle__button"><a href="#" class="btn">Ver en bolsa de Santiago</a></div>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 col-md-8">
+                <div class="cols">
+                  <div class="col-xs-6">
+                    <article class="article--box dscroll">
+                      <div class="article__body">
+                        <h3 class="article__title"><a href="#">Junta de accionistas</a></h3>
+                      </div>
+                      <div class="article__icon"><img src="img/icons/tie.svg"/></div>
+                      <div class="article__buttons"><a href="#" class="btn btn--link-gray">Ver más<span class="fa fa-angle-right"></span></a>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="col-xs-6">
+                    <article class="article--box dscroll">
+                      <div class="article__body">
+                        <h3 class="article__title"><a href="#">Reporte anual</a></h3>
+                      </div>
+                      <div class="article__icon"><img src="img/icons/laptop.svg"/></div>
+                      <div class="article__buttons"><a href="#" class="btn btn--link-gray">Ver más<span class="fa fa-angle-right"></span></a>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="col-xs-6">
+                    <article class="article--box dscroll">
+                      <div class="article__body">
+                        <h3 class="article__title"><a href="#">Contacto IR</a></h3>
+                      </div>
+                      <div class="article__icon"><img src="img/icons/school.svg"/></div>
+                      <div class="article__buttons"><a href="#" class="btn btn--link-gray">Ver más<span class="fa fa-angle-right"></span></a>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="col-xs-6">
+                    <article class="article--box dscroll">
+                      <div class="article__body">
+                        <h3 class="article__title"><a href="#">Sostenibilidad</a></h3>
+                      </div>
+                      <div class="article__icon"><img src="img/icons/radar.svg"/></div>
+                      <div class="article__buttons"><a href="#" class="btn btn--link-gray">Ver más<span class="fa fa-angle-right"></span></a>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-4">
+                <h3 class="section__title">Kit de inversionista</h3>
+                <article class="article--files">
+                  <ul>
+                    <li><a href="#">Presentación corporativa <span class='fa fa-download'></span></a></li>
+                    <li><a href="#">Estados financieros consolidados <span class='fa fa-download'></span></a></li>
+                    <li><a href="#">Fact sheet <span class='fa fa-download'></span></a></li>
+                    <li><a href="#">Earnings release <span class='fa fa-download'></span></a></li>
+                    <li><a href="#">Resumen financiero <span class='fa fa-download'></span></a></li>
+                    <li><a href="#"><strong>Descargar todo</strong> <span class='fa fa-download'></span></a></li>
+                  </ul>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section--news section--light">
+        <div class="section__wrap">
+          <div class="section__header">
+            <h3 class="section__title">Noticias</h3>
+          </div>
+          <div class="section__body">
+            <div class="cols cols-scroll">
+              <div class="col-lg-4">
+                <article class="article--new dscroll">
+                  <div class="article__bg">
+                    <div class="bg"><a href="#"><img src="img/uploads/18.jpg"/></a></div>
+                  </div>
+                  <div class="article__body">
+                    <div class="article__top">
+                      <div class="article__tag">Noticia</div>
+                      <div class="article__date">20.05.2018</div>
+                    </div>
+                    <h3 class="article__title"><a href="news.html">Servicios administrados de seguridad</a></h3>
+                    <p class="article__description">Una oportunidad de resguardar sus datos de manera eficiente sin necesidad de pagar de más</p>
+                  </div>
+                  <div class="article__footer">
+                    <div class="article__buttons"><a href="news-single.html" class="btn btn--link btn--orange">Ver más<span class="fa fa-angle-right"></span></a></div>
+                  </div>
+                </article>
+              </div>
+              <div class="col-lg-4">
+                <article class="article--new dscroll">
+                  <div class="article__bg">
+                    <div class="bg"><a href="#"><img src="img/uploads/19.jpg"/></a></div>
+                  </div>
+                  <div class="article__body">
+                    <div class="article__top">
+                      <div class="article__tag">Noticia</div>
+                      <div class="article__date">20.05.2018</div>
+                    </div>
+                    <h3 class="article__title"><a href="news.html">Ataques cada vez más sofisticados y completos Triada Fundamental</a></h3>
+                    <p class="article__description">¿Cómo serán los delitos informáticos a futuro y qué consecuencias podrían tener? Un transcendente ...</p>
+                  </div>
+                  <div class="article__footer">
+                    <div class="article__buttons"><a href="news-single.html" class="btn btn--link btn--orange">Ver más<span class="fa fa-angle-right"></span></a></div>
+                  </div>
+                </article>
+              </div>
+              <div class="col-lg-4">
+                <article class="article--new dscroll">
+                  <div class="article__bg">
+                    <div class="bg"><a href="#"><img src="img/uploads/20.jpg"/></a></div>
+                  </div>
+                  <div class="article__body">
+                    <div class="article__top">
+                      <div class="article__tag">Noticia</div>
+                      <div class="article__date">20.05.2018</div>
+                    </div>
+                    <h3 class="article__title"><a href="news.html">Nuevo estándar en continuidad operativa y eficiencia energética</a></h3>
+                    <p class="article__description">Esta nueva certificación garantiza mayor disponibilidad, eficiencia energética ...</p>
+                  </div>
+                  <div class="article__footer">
+                    <div class="article__buttons"><a href="news-single.html" class="btn btn--link btn--orange">Ver más<span class="fa fa-angle-right"></span></a></div>
+                  </div>
+                </article>
+              </div>
+              <div class="col-lg-4">
+                <article class="article--new dscroll">
+                  <div class="article__bg">
+                    <div class="bg"><a href="#"><img src="img/uploads/1.jpg"/></a></div>
+                  </div>
+                  <div class="article__body">
+                    <div class="article__top">
+                      <div class="article__tag">Noticia</div>
+                      <div class="article__date">20.05.2018</div>
+                    </div>
+                    <h3 class="article__title"><a href="news.html">Servicios administrados de seguridad</a></h3>
+                    <p class="article__description">Una oportunidad de resguardar sus datos de manera eficiente sin necesidad de pagar de más</p>
+                  </div>
+                  <div class="article__footer">
+                    <div class="article__buttons"><a href="news-single.html" class="btn btn--link btn--orange">Ver más<span class="fa fa-angle-right"></span></a></div>
+                  </div>
+                </article>
+              </div>
+              <div class="col-lg-4">
+                <article class="article--new dscroll">
+                  <div class="article__bg">
+                    <div class="bg"><a href="#"><img src="img/uploads/2.jpg"/></a></div>
+                  </div>
+                  <div class="article__body">
+                    <div class="article__top">
+                      <div class="article__tag">Noticia</div>
+                      <div class="article__date">20.05.2018</div>
+                    </div>
+                    <h3 class="article__title"><a href="news.html">Ataques cada vez más sofisticados y completos Triada Fundamental</a></h3>
+                    <p class="article__description">¿Cómo serán los delitos informáticos a futuro y qué consecuencias podrían tener? Un transcendente ...</p>
+                  </div>
+                  <div class="article__footer">
+                    <div class="article__buttons"><a href="news-single.html" class="btn btn--link btn--orange">Ver más<span class="fa fa-angle-right"></span></a></div>
+                  </div>
+                </article>
+              </div>
+              <div class="col-lg-4">
+                <article class="article--new dscroll">
+                  <div class="article__bg">
+                    <div class="bg"><a href="#"><img src="img/uploads/3.jpg"/></a></div>
+                  </div>
+                  <div class="article__body">
+                    <div class="article__top">
+                      <div class="article__tag">Noticia</div>
+                      <div class="article__date">20.05.2018</div>
+                    </div>
+                    <h3 class="article__title"><a href="news.html">Nuevo estándar en continuidad operativa y eficiencia energética</a></h3>
+                    <p class="article__description">Esta nueva certificación garantiza mayor disponibilidad, eficiencia energética ...</p>
+                  </div>
+                  <div class="article__footer">
+                    <div class="article__buttons"><a href="news-single.html" class="btn btn--link btn--orange">Ver más<span class="fa fa-angle-right"></span></a></div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <div class="footer__bg">
+        <div class="bg"><img src="img/uploads/8.jpg"></div>
+      </div>
+      <div class="footer__wrap">
+        <div class="footer__primary">
+          <div class="cols">
+            <div class="col-xs-12 col-md-12">
+              <div class="footer__logo"><img src="img/logo-sonda.png"></div>
+            </div>
+            <div class="col-xs-12 col-md-12">
+              <div class="footer__countries">
+                <ul>
+                  <li>Argentina
+                    <ul>
+                      <li><span class="fa fa-map-marker"></span> <span>Dirección:</span> Alsina 772, Buenos Aires</li>
+                      <li><span class="fa fa-phone"></span> <span>Teléfono:</span> (54-11) 4331 7500</li>
+                    </ul>
+                  </li>
+                  <li>Brasil
+                    <ul>
+                      <li><span class="fa fa-map-marker"></span> <span>Dirección:</span> Alameda Europa, 1206, Condomínio Polo Tamboré, Santana de Parnaíba - SP</li>
+                      <li><span class="fa fa-phone"></span> <span>Teléfonos:</span> (55-11) 3126 6000<br />(55-11) 3126 7000</li>
+                    </ul>
+                  </li>
+                  <li>Chile
+                    <ul>
+                      <li><span class="fa fa-map-marker"></span> <span>Dirección:</span> Teatinos 500, Santiago</li>
+                      <li><span class="fa fa-phone"></span> <span>Teléfono:</span> (56-2) 2657 50 00</li>
+                    </ul>
+                  </li>
+                  <li>Colombia
+                    <ul>
+                      <li><span class="fa fa-map-marker"></span> <span>Dirección:</span> Av. Cra. 45 (Autopista Norte) N°118–68, Bogotá</li>
+                      <li><span class="fa fa-phone"></span> <span>Teléfono:</span> (57-1) 6466565</li>
+                    </ul>
+                  </li>
+                  <li>Costa rica
+                    <ul>
+                      <li><span class="fa fa-map-marker"></span> <span>Dirección:</span> Ofiplaza del Este, Edificio A Piso 3 Barrio Dent, San José</li>
+                      <li><span class="fa fa-phone"></span> <span>Teléfono:</span> (50-6) 2224 9596</li>
+                    </ul>
+                  </li>
+                  <li>Ecuador
+                    <ul>
+                      <li><span class="fa fa-map-marker"></span> <span>Dirección:</span> Av. Los Shyris N36-166 y Naciones Unidas, Quito</li>
+                      <li><span class="fa fa-phone"></span> <span>Teléfono:</span> (593-2) 373 1570</li>
+                    </ul>
+                  </li>
+                  <li>México
+                    <ul>
+                      <li><span class="fa fa-map-marker"></span> <span>Dirección:</span> Av. Revolución 639 Col. San Pedro de los Pinos Del. Benito Juárez c.p. 03800, México D.F.</li>
+                      <li><span class="fa fa-phone"></span> <span>Teléfono:</span>  5255 5010 7000</li>
+                      <li><span class="fa fa-map-marker"></span> <span>Dirección:</span> Boulevard Adolfo López Mateos 2259 Col. Atlamaya cp 01760, Ciudad de México.</li>
+                      <li><span class="fa fa-map-marker"></span> <span>Dirección:</span> Culiacán 123 Col. Hipódromo Del. Cuauhtémoc c. p. 06100.</li>
+                      <li><span class="fa fa-phone"></span> <span>Teléfono:</span>  (52-55) 1167 37000</li>
+                    </ul>
+                  </li>
+                  <li>Panamá
+                    <ul>
+                      <li><span class="fa fa-map-marker"></span> <span>Dirección:</span> Alsina 772, Buenos Aires</li>
+                      <li><span class="fa fa-phone"></span> <span>Teléfono:</span> (54-11) 4331 7500</li>
+                    </ul>
+                  </li>
+                  <li>Perú
+                    <ul>
+                      <li><span class="fa fa-map-marker"></span> <span>Dirección:</span> Avenida Javier Prado Este 444 Piso 16, San Isidro, Lima</li>
+                      <li><span class="fa fa-phone"></span> <span>Teléfono:</span> (51-1) 616 7000</li>
+                    </ul>
+                  </li>
+                  <li>Uruguay
+                    <ul>
+                      <li><span class="fa fa-map-marker"></span> <span>Dirección:</span> Plaza Independencia 831 Piso 11, Montevideo</li>
+                      <li><span class="fa fa-phone"></span> <span>Teléfono:</span> (59-82) 908 3000</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-12">
+              <div class="footer__social">
+                <ul>
+                  <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+                  <li><a href="#"><span class="fa fa-youtube"></span></a></li>
+                  <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                  <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__secondary">
+          <!--.footer__nav
+          .cols
+          	.col-xs-6.col-sm-4
+          		ul
+          			li: a(href="#") Acerca
+          			li: a(href="#") Ayuda
+          			li: a(href="#") Contacto
+          			li: a(href="#") Terminos
+          			li: a(href="#") Privacidad
+          	.col-xs-6.col-sm-4
+          		ul
+          			li: a(href="#") Servicios
+          			li: a(href="#") Productos
+          			li: a(href="#") Industrias
+          			li: a(href="#") Testimonios
+          			li: a(href="#") Inversionistas
+          	.col-xs-12.col-sm-4
+          		ul
+          			li: a(href="#") Marca
+          			li: a(href="#") Trabaja con nosotros
+          			li: a(href="#") Equipo
+          
+          -->
+          <div class="footer__others">
+            <ul>
+              <li><a href="#">Información de Interés y Transacciones Relevantes</a></li>
+              <li><a href="#">Manual Manejo Información</a></li>
+              <li><a href="#">Canal de Denuncias</a></li>
+            </ul>
+          </div>
+          <div class="footer__others footer__others--mexico">
+            <h4 class="footer__title">Aviso de privacidad MX</h4>
+            <ul>
+              <li><a href="#">SONDA México</a></li>
+              <li><a href="#">Ingeniería en Servicios de Informática</a></li>
+            </ul>
+          </div>
+          <div class="footer__copyright">Copyright © 2018 SONDA. Todos los derechos reservados</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
